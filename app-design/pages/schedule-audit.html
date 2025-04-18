@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Audit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="../css/schedule-audit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule New Audit</h1>
+        
+        <div class="schedule-container">
+            <div class="schedule-form">
+                <form id="auditForm">
+                    <div class="form-group">
+                        <label>Audit Type <span class="required">*</span></label>
+                        <select class="form-control" required>
+                            <option value="">Select Audit Type</option>
+                            <option>Internal Audit</option>
+                            <option>Supplier Audit</option>
+                            <option>Quality Audit</option>
+                            <option>Process Audit</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Audit Date <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="auditDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Assigned Auditor <span class="required">*</span></label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Schedule Audit</button>
+                </form>
+            </div>
+
+            <div class="audit-timeline">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search audits...">
+                </div>
+
+                <table class="audit-table">
+                    <thead>
+                        <tr>
+                            <th>Audit Type</th>
+                            <th>Date</th>
+                            <th>Auditor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Internal Audit</td>
+                            <td>2024-03-15</td>
+                            <td>John Smith</td>
+                            <td><span class="status-badge status-scheduled">Scheduled</span></td>
+                        </tr>
+                        <tr>
+                            <td>Supplier Audit</td>
+                            <td>2024-03-22</td>
+                            <td>Jane Doe</td>
+                            <td><span class="status-badge status-in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>Quality Audit</td>
+                            <td>2024-04-01</td>
+                            <td>Michael Brown</td>
+                            <td><span class="status-badge status-scheduled">Scheduled</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize date picker
+        flatpickr("#auditDate", {
+            dateFormat: "Y-m-d",
+            minDate: "today",
+            disableMobile: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Management</title>
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="../css/audit-management.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audit Management</h1>
+        
+        <button class="upload-btn">
+            <a href="./schedule-audit.html">Create New Audit</a>
+        </button>
+        <div class="audit-container">
+            <div class="calendar-card">
+                <div id="calendar" style="max-width: 400px;"></div>
+            </div>
+
+            <!-- upcoming audits -->
+            <div class="audit-list">
+                <div class="audit-status">
+                    <h3 class="status-header">Upcoming Audits (10)</h3>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Internal Audit</span>
+                            <span class="audit-date">Due: 2024-03-15</span>
+                        </div>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Supplier Audit</span>
+                            <span class="audit-date">Due: 2024-03-22</span>
+                        </div>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Supplier Audit</span>
+                            <span class="audit-date">Due: 2024-03-22</span>
+                        </div>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Supplier Audit</span>
+                            <span class="audit-date">Due: 2024-03-22</span>
+                        </div>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Supplier Audit</span>
+                            <span class="audit-date">Due: 2024-03-22</span>
+                        </div>
+                        <span class="status-badge status-upcoming">Upcoming</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overdue Audits -->
+            <div class="audit-list">
+                <div class="audit-status">
+                    <h3 class="status-header">Overdue Audits (4)</h3>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Quality Audit</span>
+                            <span class="audit-date">Due: 2024-03-05</span>
+                        </div>
+                        <span class="status-badge status-overdue">Overdue</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Quality Audit</span>
+                            <span class="audit-date">Due: 2024-03-05</span>
+                        </div>
+                        <span class="status-badge status-overdue">Overdue</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Quality Audit</span>
+                            <span class="audit-date">Due: 2024-03-05</span>
+                        </div>
+                        <span class="status-badge status-overdue">Overdue</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Quality Audit</span>
+                            <span class="audit-date">Due: 2024-03-05</span>
+                        </div>
+                        <span class="status-badge status-overdue">Overdue</span>
+                    </div>
+                </div>
+              
+            </div>
+
+            <!-- Pending Audit  -->
+            <div class="audit-list">
+                <div class="audit-status">
+                    <h3 class="status-header">Completed Audits (100)</h3>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Internal Audit</span>
+                            <span class="audit-date">Completed: 2024-02-28</span>
+                        </div>
+                        <span class="status-badge status-completed">Completed</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Internal Audit</span>
+                            <span class="audit-date">Completed: 2024-02-28</span>
+                        </div>
+                        <span class="status-badge status-completed">Completed</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Internal Audit</span>
+                            <span class="audit-date">Completed: 2024-02-28</span>
+                        </div>
+                        <span class="status-badge status-completed">Completed</span>
+                    </div>
+                    <div class="audit-item">
+                        <div class="audit-meta">
+                            <span class="audit-type">Internal Audit</span>
+                            <span class="audit-date">Completed: 2024-02-28</span>
+                        </div>
+                        <span class="status-badge status-completed">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+   <script src="../js/script.js"></script>
+</body>
+</html>
