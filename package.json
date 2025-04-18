@@ -1,0 +1,25 @@
+{
+  "name": "qms",
+  "version": "1.0.0",
+  "description": "QMS software for medical",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NaimBiswas/qms.git"
+  },
+  "keywords": [
+    "qms",
+    "medical",
+    "software"
+  ],
+  "author": "Naim Biswas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NaimBiswas/qms/issues"
+  },
+  "homepage": "https://github.com/NaimBiswas/qms#readme"
+}
