@@ -74,7 +74,12 @@ h1 {
     font-weight: 500;
     margin-top: 1rem !important;
 }
-
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
 @media (max-width: 768px) {
     .dashboard {
         grid-template-columns: 1fr;
